@@ -1,0 +1,229 @@
+#version: "2.0"
+
+stories:
+- story: Saudacao
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Adeus
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Atendente humano
+  steps:
+  - intent: atendente
+  - action: utter_atendente
+
+- story: Xingamento
+  steps:
+  - intent: curse
+  - action: utter_curse
+
+- story: Elogio
+  steps:
+  - intent: compliment
+  - action: utter_compliment
+
+- story: Skills
+  steps:
+  - intent: inform_skills
+  - action: utter_inform_skills
+
+- story: ForaDeEscopo
+  steps:
+  - intent: question_out_of_scope
+  - action: utter_question_out_of_scope
+
+- story: Desculpa
+  steps:
+  - intent: apologize
+  - action: utter_apologize
+
+- story: O que é covid
+  steps:
+  - intent: covid_o_que_e
+  - action: utter_covid_o_que_e
+
+- story: O que é sars-cov-2
+  steps:
+  - intent: sars_o_que_e
+  - action: utter_sars_o_que_e
+
+- story: Diferença entre os vírus
+  steps:
+  - intent: diferenca_entre_virus
+  - action: utter_diferenca_entre_virus
+
+- story: Diferença entre as formas de contágio
+  steps:
+  - intent: diferenca_formas_contagio
+  - action: utter_diferenca_formas_contagio
+
+- story: Sintomas
+  steps:
+  - intent: sintomas
+  - action: utter_sintomas
+
+- story: Testagem
+  steps:
+  - intent: testagem
+  - action: utter_testagem
+
+- story: Sintomas leves e assintomáticos
+  steps:
+  - intent: sintomas_leves
+  - action: utter_sintomas_leves
+
+- story: Covid é preocupante
+  steps:
+  - intent: covid_e_preocupante
+  - action: utter_covid_e_preocupante
+
+- story: Grupo de risco
+  steps:
+  - intent: grupo_de_risco
+  - action: utter_grupo_de_risco
+
+- story: Reinfecção 
+  steps:
+  - intent: reinfeccao
+  - action: utter_reinfeccao
+
+- story: Covid e gravidez 
+  steps:
+  - intent: covid_e_gravidez
+  - action: utter_covid_e_gravidez
+
+- story: Cuidados e higiene 
+  steps:
+  - intent: cuidados_higiene
+  - action: utter_cuidados_higiene
+
+- story: Cuidados com viagem 
+  steps:
+  - intent: viagem
+  - action: utter_viagem
+
+- story: Transmissão da covid
+  steps:
+  - intent: covid_transmissao
+  - action: utter_covid_transmissao
+
+- story: Tratamento da covid
+  steps:
+  - intent: covid_tratamento
+  - action: utter_covid_tratamento
+
+- story: Vacina da gripe
+  steps:
+  - intent: vacina_gripe
+  - action: utter_vacina_gripe
+
+- story: Uso da máscara
+  steps:
+  - intent: uso_mascara
+  - action: utter_uso_mascara
+
+- story: Troca da máscara
+  steps:
+  - intent: troca_mascara
+  - action: utter_troca_mascara
+
+- story: Descarte da máscara e luva
+  steps:
+  - intent: descarte_mascara_luvas
+  - action: utter_descarte_mascara_luvas
+
+- story: Medicação para covid
+  steps:
+  - intent: covid_medicacao
+  - action: utter_covid_medicacao
+
+- story: Coronavírus e temperaturas
+  steps:
+  - intent: corona_temperatura
+  - action: utter_corona_temperatura
+
+- story: Receita de alcool em gel
+  steps:
+  - intent: receita_gel
+  - action: utter_receita_gel
+
+- story: Transmissão de animais
+  steps:
+  - intent: covid_animais
+  - action: utter_covid_animais
+
+- story: Recebimento de pacotes
+  steps:
+  - intent: recebimento_obj
+  - action: utter_recebimento_obj
+
+- story: Tempo de vida do vírus
+  steps:
+  - intent: covid_tempo_de_vida
+  - action: utter_covid_tempo_de_vida
+
+- story: Cuidado com as roupas
+  steps:
+  - intent: covid_roupas
+  - action: utter_covid_roupas
+
+- story: Cuidados com infectado próximo
+  steps:
+  - intent: covid_em_casa
+  - action: utter_covid_em_casa
+
+- story: Mitos
+  steps:
+  - intent: covid_mitos
+  - action: utter_covid_mitos
+
+- story: Cuidados ao ingerir medicamento
+  steps:
+  - intent: covid_o_que_nao_tomar
+  - action: utter_covid_o_que_nao_tomar
+
+- story: Eficácia do alcool 70
+  steps:
+  - intent: alcool_70
+  - action: utter_alcool_70
+
+rules:
+  - rule: NLU fallBack
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback
+
+  - rule: Obrigado
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+  
+  - rule: NomeBot
+    steps:
+    - intent: question_name
+    - action: utter_question_name
+  
+  - rule: SouBot
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+  
+  - rule: Ajuda
+    steps:
+    - intent: ajuda
+    - action: utter_ajuda
+  
+  - rule: Aleatorio
+    steps:
+    - intent: aleatorio
+    - action: utter_aleatorio
+  
+  - rule: Deny
+    steps:
+    - intent: deny
+    - action: utter_deny
+

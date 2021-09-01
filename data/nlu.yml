@@ -1,0 +1,1067 @@
+#version: 2.0
+
+nlu:
+- intent: greet
+  examples: |
+    - oi
+    - olá
+    - ola
+    - olah
+    - ei
+    - e ai
+    - eae
+    - oi tudo bom
+    - hellows
+    - dai cara
+    - bom dia
+    - boa tarde
+    - boa noite
+    - fala meu
+    - oie
+    - opa
+    - e ai beleza
+    - beleza
+    - opa tudo bem?
+    - iai cara
+
+- intent: goodbye
+  examples: |
+    - tchau
+    - até logo
+    - fui
+    - vazei
+    - falou
+    - xau
+    - até mais
+    - até
+    - vou desligar
+    - tô saindo
+    - vou sair
+    - vou indo
+
+- intent: aleatorio
+  examples: |
+    - que legal
+    - interessante
+    - que interessante
+    - achei legal
+    - massa
+    - ótimo
+    - que coisa
+    - puxa vida
+    - nossa
+    - que bom
+    - que ruim
+    - triste
+    - eita
+    - eita poxa
+    - lascou
+    - que coisa boa
+    - não sabia
+    - ah tá
+    - ah é
+    - maravilha
+    - show
+    - show de bola
+    - top
+    - muito bom
+    - que chato
+    - legal
+    - falou
+    - beleza
+    - blz
+    - beleza então
+    - blz então
+    - flw
+    - entendi
+    - entendido
+    - copiado
+    - copiei
+    - entendo
+    - tá
+    - tá bem
+    - tá bom
+    - tá certo
+    - tá ok
+    - okai
+    - okey
+    - absolutamente
+    - afirmativo
+    - certo
+    - claro
+    - com certeza
+    - continua
+    - continue
+    - correto
+    - de fato
+    - ok
+    - pode ser
+    - prossiga
+    - s
+    - sim
+    - sim pode ser
+
+- intent: deny
+  examples: |
+    - acho que não
+    - jamais
+    - n
+    - nao
+    - nem
+    - nem a pau
+    - nem ferrando
+    - nop
+    - nope
+    - nunca
+    - não
+    - não sei
+    - não sei dizer
+    - não tenho certeza
+    - não vou
+    - vou nada
+    - vou não
+
+- intent: thank_you
+  examples: |
+    - Obrigado
+    - agradecida
+    - agradecido
+    - agradeço
+    - brigadu
+    - brigadão
+    - grata
+    - grato
+    - massa valeu
+    - muito obrigado
+    - obrigada
+    - obrigado
+    - obrigado!
+    - valeu
+    - valeu mesmo 
+
+- intent: bot_challenge
+  examples: |
+    - você é um robô?
+    - você é um humano?
+    - o que é você?
+    - quem é você?
+    - estou conversando com um humano?
+    - estou conversando com um robo?
+    - estou falando com uma máquina?
+    - eu te conheço?
+    - por acaso você é um bot
+    - por acaso voce é um robô
+    - qual seu gênero
+    - voce é homem?
+    - voce é mulher?
+    - você é um bot?
+    - o que voce e
+    - o que você é
+    - estou falando com quem
+    - com quem estou falando?
+    - quem está falando comigo?
+    - to falando com quem
+    - quem tá falando comigo
+    - quem tá aí
+    - quem tá conversando comigo
+    - tô conversando com quem
+    - quem é que está aí
+    - o que está conversando comigo
+    - é uma máquina que está falando
+    - quem está falando é humano?
+    - quem está falando é máquina?
+
+- intent: atendente
+  examples: |
+    - quero falar com alguém
+    - quero falar com um atendente
+    - me passa para um atendente
+    - me passa para um atendente humano
+    - me passa para uma pessoa
+    - quero falar com uma pessoa
+    - quero falar com um humano
+    - não quero falar com um robô
+    - não quero falar com uma máquina
+    - não quero falar contágio
+    - não quero falar com você
+    - passa para um funcionário
+    - passa para um atendente
+    - não quero falar com você quero um humano
+    - não quero falar com máquina quero uma pessoa
+    - passe para o atendente
+    - quero atendimento humano
+    - quero ser atendido por uma pessoa
+    - quero ser atendida por um humano
+    - me passa para o atendimento humano
+
+- intent: curse
+  examples: |
+    - arrombada
+    - arrombado
+    - arrombado do caralho
+    - assistente horrível
+    - baitola
+    - bosta
+    - bosta dos inferno
+    - buceta
+    - burro
+    - cacete
+    - caralho
+    - chupar cu
+    - corna
+    - corno
+    - cu
+    - deixa de ser viado filha da puta
+    - desgraça
+    - desgraça do inferno
+    - desgraça dos inferno
+    - desgraçado
+    - endoidou
+    - eu não gosto de conversar com você
+    - eu não gosto de você
+    - eu odeio falar com você
+    - eu odeio você
+    - eu quero te matar
+    - eu te odeio
+    - fdp
+    - feio
+    - filha da puta
+    - filho da puta
+    - foda
+    - foda se
+    - foda-se
+    - foda-se caralho
+    - fracassado
+    - imbecil
+    - lazarenta
+    - morre
+    - morre o desgraça
+    - pau no seu cu
+    - pepeca
+    - pica
+    - pinto
+    - ppk
+    - puta do caralho
+    - seu arrombado
+    - seu lerdo
+    - tá doido
+    - vaca do caralho desgraça dos inferno
+    - vaca lazarenta
+    - vadia
+    - vai se fuder
+    - vai se lascar
+    - vai tomar no cu
+    - vai tomar no olho do seu cu
+    - voce enlouqueceu
+    - voce tá doido
+    - voce tá louco
+    - voce tá maluco
+    - voce é um fracassado
+    - você é o pior assistente que existe
+    - você é um lixo
+    - você é uma bosta
+    - vou comer a sua mãe
+    - vou te enterrar
+    - vou te enterrar vivo
+    - xoxota
+
+- intent: compliment
+  examples: |
+    - Que massa
+    - achei super
+    - adorei
+    - amei
+    - arrasou
+    - gostei muito
+    - gosto de voce
+    - isso é demais
+    - isso é legal
+    - maravilha
+    - massa
+    - muito bom
+    - muito interessante
+    - muito legal
+    - que engraçadinho
+    - que gracinha
+    - que legal
+    - que lindo
+    - que maravilha
+    - show
+    - show de bola
+    - top
+    - voce é engraçado
+    - voce é esperto
+    - voce é inteligente
+    - você é legal
+    - você é top 
+
+- intent: inform_skills 
+  examples: |
+    - O que você sabe fazer?
+    - como você pode me ajudar
+    - como você vai me ajudar
+    - em que voce pode me ajudar
+    - no que voce pode me auxiliar
+    - o que posso pedir para voce fazer?
+    - o que posso te pedir
+    - o que posso te perguntar
+    - o que voce pode me informar
+    - o que voce sabe responder?
+    - o que você faz
+    - podemos conversar sobre quais assuntos?
+    - posso falar sobre quais assuntos
+    - posso perguntar o que para voce?
+    - posso perguntar sobre qualquer assunto?
+    - posso te perguntar sobre o que
+    - quais assuntos voce sabe?
+    - quais são seus conhecimentos
+    - quais são suas habilidades
+    - sobre o que podemos conversar
+    - sobre o que voce sabe falar
+    - voce sabe responder sobre o que?
+    - você pode me ajudar em quê
+    - você sabe falar sobre o quê
+
+- intent: question_name
+  examples: |
+    - como devo te chamar
+    - como posso te chamar
+    - como você chama?
+    - como você quer que eu te chame
+    - como você se chama
+    - informe o seu nome
+    - me fala o seu nome
+    - posso te chamar como?
+    - qual seu nome
+    - qual é seu nome
+    - qual é teu nome?
+    - que nome você tem?
+    - quero saber teu nome
+    - você tem nome 
+    - te chamo como?
+    - como devo te chamar
+
+- intent: question_out_of_scope
+  examples: |
+    - a cabeça da minha rola é roxa
+    - você é canibal
+    - entorpecentes
+    - eu gosto de chupar boceta
+    - eu gosto de chupar piroca
+    - eu gosto de comer buceta
+    - eu gosto de comer cu
+    - eu gosto de comer cú
+    - eu gosto de dar a bunda
+    - eu gosto de dar o cu
+    - eu gosto de sexo selvagem
+    - eu gosto de transar
+    - eu gosto é de chupar pinto
+    - eu não gosto de pessoas
+    - eu quero comer o seu cuzinho
+    - eu quero comer voce
+    - eu quero foder com voce
+    - eu quero foder voce
+    - eu quero fuder com voce
+    - eu quero fuder voce
+    - eu quero te comer
+    - eu sou canibal
+    - eu sou psicopata
+    - eu sou violento
+    - eu tenho o pau gigante
+    - eu tenho o pau pequeno
+    - eu tenho o penis pequeno
+    - eu tenho o pênis pequeno
+    - eu tenho um pauzão
+    - eu tenho um pinto que não vale nada
+    - eu tenho ódio de pessoas
+    - eu vou te matar
+    - meu pau mede cm
+    - meu pau é gigante
+    - meu pau é maior que meu braço
+    - meu pinto é enorme
+    - meu pinto é muito pequeno
+    - meu pênis é muito grande
+    - minha rola é gigante
+    - o meu pau é gigantesco
+    - o meu penis é muito grande
+    - o meu pinto está fedendo
+    - o meu pinto está sangrando
+    - o que voce acha de assassinato
+    - o seu cu está fedendo
+    - o seu cu tem um cheiro
+    - odeio pessoas
+    - qual o cheiro da sua rola
+    - qual o cheiro do seu cu
+    - qual o cheiro do seu pinto
+    - quer me comer
+    - queria ter o pau maior
+    - quero comer seu cu
+    - quero peidar
+    - quero que você coma o meu cu
+    - quero soltar um peido
+    - quero soltar um pum
+    - quero trepar
+    - quero trepar com voce
+    - voce come carne humana
+    - voce concorda com assassinos
+    - voce concorda com psicopatas
+    - voce concorda com traficante
+    - voce gosta de carne humana
+    - voce gosta de incesto
+    - voce gosta de machucar pessoas
+    - voce já teve vontade de matar
+    - voce mataria alguem
+    - voce mutilaria alguem
+    - voce trafica
+    - voce usa drogas
+    - voce vai me matar
+    - voce é canibal
+    - voce é maconheira
+    - voce é maconheiro
+    - voce é traficante de drogas
+    - voce é um psicopata
+    - voce é violenta
+    - voce é violento
+    - você acha bom dar o cu?
+    - você acha minha rola grande?
+    - você acha que meu pau é grande
+    - você gosta de chupar cu?
+    - você gosta de chupar piroca?
+    - você gosta de dar o cu?
+    - você gosta de transar com o bumbum?
+    - você gosta de transar? 
+    - você gosta de gays
+    - gosta de lésbicas
+    - o que você acha de negros
+    - é racista
+
+- intent: apologize
+  examples: |
+    - Desculpe
+    - desculpa
+    - falei merda desculpe
+    - foi mal
+    - desculpe
+    - me passei
+    - me perdoa
+    - me perdoe 
+    - perdão
+    - peço desculpa 
+    - peço perdão
+
+- intent: covid_o_que_e
+  examples: |
+    - o que é covid-19?
+    - o que é coronavírus?
+    - o que é coronavírus?
+    - coronavirus o que é?
+    - que é covid-19?
+    - covid é o que
+    - como é corona?
+    - o que significa coronavírus?
+    - o que significa covid-19?
+    - o que covid significa
+    - o que quer dizer covid
+    - o que significa corona?
+    - o que coronavírus quer dizer?
+    - como começou o covid?
+    - onde começou o covid?
+    - como surgiu o coronavirus?
+    - quando começou o covid?
+    - quando foi o início do coronavirus?
+    - quando se iniciou o contágio do covid?
+    - em que lugar se iniciou o coronavírus
+
+- intent: sars_o_que_e
+  examples: |
+    - o que é sars-cov-2?
+    - o que é sars 2?
+    - o que é sars cov?
+    - sars cov 2 o que é?
+    - que é sars 2?
+    - sars cov 2 é o que
+    - como é a sars cov 2?
+    - o que significa coronavírus?
+    - o que significa sars-cov-2?
+    - o que sars-cov-2 significa
+    - o que quer dizer sars-cov-2
+    - o que significa sars-cov-2?
+    - o que sars-cov-2 quer dizer?
+
+- intent: diferenca_entre_virus
+  examples: |
+    - qual a diferença entre os nomes?
+    - o que é cada vírus?
+    - qual a diferença entre covid e coronavirus?
+    - qual a diferenca entre covid e sars?
+    - como devo chamar cada virus?
+    - sars cov 2 e covid qual a diferença
+    - qual é sars cov 2 e o corona?
+    - o que defere coronavírus do sars?
+    - o que diefere sars-cov-2 do corona?
+    - o que diefere sars-cov-2 de covid
+    - qual a diferença entre sars-cov-2, corona e covid
+    - qual a semelhança entre covid-19 e sars-cov-2?
+    - o que tem em comum o sars-cov-2 e o coronavírus?
+    - como eu devo chamar coronavírus ou covid-19?
+    - como é cada vírus?
+    - o que é mers?
+    - qual a diferença entre sars e mers?
+    - sars e mers é a mesma coisa?
+    - o que difere mers do covid?
+    - mers é o mesmo que sars?
+    - o que significa mers?
+    - o que mers quer dizer?
+
+- intent: diferenca_formas_contagio
+  examples: |
+    - qual a diferença entre os contágios?
+    - o que é contágio comunitário?
+    - qual a diferneça entre contágio comunitário e local?
+    - o que considerada transmissão local?
+    - o que é transmissão comunitária?
+    - o qie difere transmissão comunitária da local?
+    - o que significa transmissão comunitária do vírus?
+    - o que é contágio local e comunitário?
+    - como se dá a transmissão comunitária?
+
+- intent: sintomas
+  examples: |
+    - quais são os sintomas da covid?
+    - quais os sintomas de gripe comum e covid-19?
+    - o que difere covid de gripe?
+    - o que difere corona de gripe comum?
+    - qual a diferença entre gripe comum e covid?
+    - coronavirus tem os mesmos sintomas de gripe?
+    - como saber se é gripe ou covid?
+    - como saber se é só gripe comum?
+    - como saber se é covid?
+    - como saber se alguém tem covid?
+    - como saber se a pessoa está com corona?
+    - qual a diferença entre resfriado e covid?
+    - quais os sintomas de gripe e covid?
+    - quais os sintomas de coronavirus?
+    - quais os sintomas de corona?
+    - gripe e covid tem os mesmos sintomas?
+    - resfriado e corona tem os mesmos sintomas?
+    - os sintomas de gripe e covid são iguais?
+    - os sintomas de covid são quais?
+    - os sintomas de gripe são iguais aos de covid?
+    - como saber se é só resfriado?
+    - como descobrir se tenho covid?
+    - como descobrir se tenho coronavirus?
+    - como saber se me contaminei com covid?
+    - como saber se estou positivo para covid?
+
+- intent: testagem
+  examples: |
+    - como sei se devo fazer o teste?
+    - onde vou para fazer o teste?
+    - como faço o teste de covid?
+    - como fazer o teste pra covid?
+    - como testar o coronavirus?
+    - como funciona para realizar o teste de covid?
+    - como funciona a testagem?
+    - como sei se posso fazer o teste?
+    - onde faço o teste?
+    - aonde devo ir para me testar?
+    - quero fazer um teste pra covid como faço?
+    - se tiver sintomas devo ir testar?
+    - como sei se devo ir fazer o teste?
+    - quero fazer um teste
+    - gostaria de realizar um teste de covid
+    - posso testar direto na fiocruz?
+    - a fiocruz faz teste?
+    - quero fazer teste na fiocruz
+    - e se eu for na fio cruz testar?
+    - a fiocruz atende para testagem?
+    - preciso ir na fiocruz testar?
+
+- intent: sintomas_leves
+  examples: |
+    - posso ter covid sem ter sintoma algum?
+    - posso ter covid mesmo com sintomas comuns de gripe?
+    - posso transmitir coronavirus se estiver assintomático?
+    - posso contrair covid de pessoa assintomática?
+    - como saber se estou assintomático?
+    - o que fazer se estiver assintomático?
+    - preciso cuidar se estiver sem sintomas?
+    - precisa cuidar quando a pessoa estiver sem sintomas?
+    - pessoa com sintomas leves pode contaminar alguém?
+    - mesmo tendo sintomas leves a pessoa pode transmitir covid?
+    - o que fazer se estiver assintomático?
+    - o que fazer se estiver sem sintomas?
+    - o que fazer se não tiver sintoma algum?
+    - o que fazer se tiver sintomas leves?
+    - tem perigo se estiver assintomático?
+    - qual o perigo de estar com sitomas leves ou assintomático?
+    - preciso cuidar de estiver assintomático?
+    - preciso cuidar se estiver com sintomas leves?
+    - quais cuidados devo ter se alguém estiver com sintomas leves?
+    - quais cuidados devo ter se alguém estiver assintomático?
+    - como saber se estou com o vírus incubado?
+    - quanto tempo pra saber se estou contaminado?
+    - como é a incubação do vírus?
+    - qual o período de incubação do vírus?
+
+- intent: covid_e_preocupante
+  examples: |
+    - preciso me preocupar com a covid?
+    - covid é preocupante?
+    - as pessoas precisam se preocupar com a covid?
+    - a covd-19 é perigosa?
+    - coronavirus é perigoso?
+    - eu preciso cuidar para não pegar covid-19?
+    - o coronavirus é algo sério?
+    - posso descuidar da covid?
+    - devo me preocupar com o coronavírus?
+    - devo me preocupar com a covid-19?
+    - devo me preocupar com a transmissão da covid?
+
+- intent: grupo_de_risco
+  examples: |
+    - quais são os grupos de risco?
+    - quem são os mais propensos a covid?
+    - para quem a covid é mais perigosa?
+    - para quem o coronavirus é mais perigoso?
+    - o perigo de contágio é maior para que pessoas?
+    - quem deve cuidar mais da covid?
+    - que grupos de pessoas deve cuidar mais?
+    - que pesssoas tem mais risco de contrair covid-19?
+    - qual é o grupo de risco?
+    - existe grupo de risco?
+    - que tipos de doenças podem aumentar o risco da covid-19?
+    - quais condições aumentam o risco da covid?
+    - como sei se sou grupo de risco?
+    - como saber se estou no grupo de risco?
+    - tem grupo de risco?
+    - quem é do grupo de risco?
+    - que grupo tem mais perigo ao pegar covid?
+  
+- intent: reinfeccao
+  examples: |
+    - existe recontágio de covid-19?
+    - posso pegar covid de novo?
+    - posso pegar coronavirus novamente?
+    - é possível pegar covid a segunda vez?
+    - alguém pode se reinfectar com coronavirus?
+    - dá pra pegar covid novamente?
+    - alguém que já  teve covid pode pegar de novo?
+    - existe contaminação a segunda vez?
+    - coronavirus tem segunda vez?
+    - existe imunidade depois de ter tido covid?
+    - depois da covid estou imunizado?
+    - se já tive corona posso pegar de novo?
+    - se já tive coronavirus estou imunine?
+    - uma pessoa que já teve covid fica imune?
+
+- intent: covid_e_gravidez
+  examples: |
+    - grávidas podem contrair covid?
+    - qual o risco de covid na gravidez?
+    - existe maior risco para as grávidas?
+    - gestantes estão no grupo de risco?
+    - pode amamentar se estiver com covid?
+    - existe risco em amamentar durante a covid?
+    - grávidas com coronavirus podem amamentar?
+    - qual o risco de manter a amamentação se estiver contaminada?
+    - pode agravar o quadro de covid se estiver grávida?
+    - quais cuidados se deve ter se estiver gestante?
+    - quais cuidados se deve ter se estiver amamentando?
+    - posso amamentar com covid?
+    - quais os risco para o bebê se a mãe estiver com covid-19?
+    - o que fazer se pegar covid grávida?
+    - gestantes podem pegar covid?
+    - mulheres grávidas fazem parte do grupo de risco?
+  
+- intent: cuidados_higiene
+  examples: |
+    - quais os cuidados de higiene que devo ter?
+    - como devo cuidar para não transmitir covid?
+    - o que devo fazer para cuidar com o contágios?
+    - quais os cuidados se deve ter para evitar contaminação?
+    - quais cuidados devo ter para evitar a transmissão do vírus?
+    - como cuidar da higiene para não pegar covid?
+    - o que fazer para não se contaminar?
+    - o que fazer para não transmitir o vírus?
+    - o que fazer para não contaminar ninguém?
+    - que cuidados preciso ter?
+    - que atitudes se deve ter para não pegar coronavirus?
+    - como posso cuidar para não contaminar alguém?
+    - como posso me proteger de contaminação?
+    - como posso fazer para não pegar coronavirus?
+    - como posso fazer para não pegar covid?
+    - como evitar a propagação do vírus?
+    - como proteger as pessoas da transmissão do coronavirus?
+    - como me proteger da transmissão?
+    - como proteger minha família do contágios?
+    - como proteger meus colegas de trabalho do contágios?
+    - como evitar a transmissão da covid-19?
+    - como posso me cuidar
+    - como devo me cuidar
+    - o que posso fazer para me proteger
+    - o que posso fazer para me cuidar
+    - o que posso fazer para não pegar
+    - o que devo fazer para não me infectar
+
+- intent: viagem
+  examples: |
+    - posso viajar com covid?
+    - é seguro viajar?
+    - se pode viajar na pandemia?
+    - o que devo fazer se viajar?
+    - há perigo em viajar na pandemia?
+    - tem risco se viajar com covid?
+    - o que fazer ao voltar de viagem?
+    - como me cuidar se precisar viajar?
+    - o que devo fazer na volta da viagem?
+    - quais cuidados devo ter ao viajar?
+    - o risco de transmissão é maior em viagem?
+    - quais os riscos em viajar?
+    - na volta da viagem o que devo fazer?
+    - e se quiser viajar eu posso?
+    - como me proteger em viagem?
+
+- intent: covid_transmissao
+  examples: |
+   - como acontece o contágios?
+   - como posso pegar covid?
+   - como se pega covid?
+   - como é o contágio do coronavirus?
+   - como acontece a transmissão da covid?
+   - como se pega covid-19?
+   - como se contamina com coronavirus?
+   - qual a forma de contágio da covid?
+   - qual a maneira de transmissão do virus?
+   - como alguém pode se contaminar com a covid?
+   - como o virus da covid é trasmitido?
+   - como é o contágio do coronavirus?
+  
+- intent: covid_tratamento
+  examples: |
+    - como curar a covid?
+    - o que fazer quando tiver covid?
+    - qual o tratamento para o coronavirus?
+    - o que devo fazer de me contaminar com covid?
+    - qual remédio devo tomar para covid?
+    - o que tomo pra covid?
+    - peguei covid o que fazer?
+    - qual o tratamento para a covid-19?
+    - Que cuidados preciso ter com covid?
+    - como me cuidar com covid
+    - como se cuidar com covid
+    - o que devo fazer pra me recuperar da covid
+    - o que devo fazer depois de pegar covid
+    - o que devo fazer depois de pegar coronavirus
+    - o que devo fazer para me cuidar depois da covid
+    - o que faço depois da covid
+    - o que faço depois do corona
+    - o que se faz depois de pegar coronavirus
+    - o que se faz para se recuperar do corona
+    - que cuidados eu tenho que ter após a infecção do coronavirus
+    - que cuidados se deve ter depois de contrair covid
+    - que cuidados se deve ter com covid
+    - acho que estou com covid
+    - estou com covid
+    - peguei coronavirus
+    - peguei covid
+    - acho que peguei corona
+
+- intent: vacina_gripe
+  examples: |
+    - a vacina de gripe é eficaz para covid?
+    - posso tomar vacina de gripe para não pegar covid?
+    - a vacina contra influenza ajuda para covid?
+    - se eu tomar vacina para influenza pego covid?
+    - a vacina para h1n1 imuniza para o coronavirus?
+    - quero tomar a vacina para influenza para covid
+    - coronavirus pode ser vacinado com a vacina de influenza
+    - a vacina para influenza serve para covid-19?
+    - a vacina para h1n1 também serve para coronavirus?
+    - as vacinas são as mesmas para a covid?
+    - existe vacina para covid-19?
+    - já existe vacina para covid?
+    - tem vacina para coronavirus?
+
+- intent: uso_mascara
+  examples: |
+    - como usar as máscaras cirurgicas?
+    - qual o jeito certo de usar as máscaras?
+    - como devo usar a máscara de proteção contra covid?
+    - qual a forma correta do uso da máscaras?
+    - uso como a máscara pra covid?
+    - como coloco a máscara?
+    - qual o jeito certo de se usar a máscara?
+    - como se coloca a máscara?
+    - como devo usar a máscara?
+    - como se usa a máscara corretamente?
+    - como uso a máscara
+    - como se deve colocar a máscara?
+    - como se deve usar a máscara?
+    - como usar a máscara
+    - como se usa máscara
+    - como colocar a máscara
+    - como se deve pôr a máscara
+    - como coloca a máscara
+    - como eu ponho a máscara
+    - qual jeito se usa a máscara
+    - de qual jeito uso a máscara
+    - de qual forma coloco a máscara
+    - de qual maneira se coloca a máscara
+
+- intent: troca_mascara
+  examples: |
+    - quando sei que devo trocar a máscara?
+    - de quanto em quanto tempo devo trocar a máscara?
+    - como troco a máscara?
+    - como devo tirar a máscara?
+    - como se deve trocar a máscara?
+    - qual o jeito certo de trocar a máscara?
+    - qual a forma correta de tirar a máscara?
+    - como se deve retirar a máscara?
+    - pra tirar a máscara se faz como?
+    - pra remover a máscara devo fazer o que?
+    - como sei se está na hora de trocar a máscara?
+    - como saber se precisa fazer a troca da máscara?
+
+- intent: descarte_mascara_luvas
+  examples: |
+    - quando faço o descarte da máscara?
+    - como faço o descarte das luvas?
+    - onde descartar luvas e máscara?
+    - qual o jeito corrreto de jogar fora a máscaraw
+    - qual o jeito certo de jogar fora a luvas?
+    - como posso jgar fora minhas luvas?
+    - como posso jogar fora minha máscara?
+    - onde devo me livrar de luvas e mascara?
+    - onde jogo a luvas?
+    - onde jogo a máscara?
+    - posso jogar a máscara na rua?
+    - posso jogar a luva na rua?
+    - posso descartar as luvas cirurgicas em lixeira comum?
+    - posso jogar a máscara em lixeira comum?
+    - posso jogar a máscara em locais públicos?
+    - posso descaratar as luvas em locais públicos?
+    - quero jograr fora minha luva
+    - quero jogar fora minha máscara
+    - como jogo fora as luvas
+    - como jogo fora a mascara
+    - como descarto a máscara 
+    - como descarto a luva
+    - como descarto as luvas do jeito certo
+    - qual o jeito certo de fazer o descarte da máscara
+    - qual o jeito certo de descartar a luva
+
+- intent: covid_medicacao
+  examples: |
+   - que remédio posso tomar pra covid?
+   - posso tomar antibiótico pra coronavirus?
+   - posso tomar clororquina se estiver com covid?
+   - devo tomar medicação para covid-19W
+   - o que posso tomar se tiver coronavirus?
+   - existem remédios pra prevenir a covid?
+   - tem remédios que evitam a contaminação do corona vírus?
+   - existe medicamento pra evitar a covid?
+   - clororquina é bom pra coronavírus?
+   - colororquina trata covid?
+   - clororquina evita covid?
+   - antibiótico evita pegar covid?
+   - que antibiótico posso tomar pra não pegar coronavirus?
+   - antibiótico é eficaz contra covid?
+   - existe tratamento para prevenir a contaminação por covid?
+   - existe remédio pra não pegar corona?
+   - posso tomar ivermectina
+   - posso tomar hidroxicloroquina
+   - posso tomar remédio por conta própria?
+   - quero tomar azitromicina
+   - posso tomar colchicina?
+   - quero tomat antibiótico
+   - vou tomar azitromicina
+   - vou tomar antibiótico
+
+- intent: corona_temperatura
+  examples: |
+    - qual a temperatura que mata o vírus?
+    - o coronavírus sobrevive ao rio?
+    - o frio mata o vírus da covid?
+    - tem alguma temperatura que o vírus não resista?
+    - o calor aumenta o perigo do contágio?
+    - a covid piora com o frio?
+    - a covid piora com o calor?
+    - qual clima é pior para o coronavírus?
+    - que temperatura pode matar o vírus?
+    - ferver água mata o coronavírus?
+    - água quente mata a covid?
+    - esquentar água pode matar o coronavirus?
+    - posso beber água quente para matar o vírus?
+    - lavar roupa com água quente mata o vírus?
+    - como posso matar o vírus?
+    - o que usar para matar o vírus nos objetos?
+    - o que fazer para limpar superfícies?
+    - o que fazer para higienizar as roupas?
+    - como devo me lavar para limpar do vírus?
+    - lavar com sabão é suficiente pra matar o vírus da covid?
+    - água e sabão serve para limpar o coronavírus?
+    - álcool 70 serve para matar o coronavírus?
+    - alcool 70 limpa objetos do coronavirus?
+    - como posso higienizar superfícies do virus?
+  
+- intent: receita_gel
+  examples: |
+    - posso fazer alcool em gel em casa?
+    - como faço alcool em gel caseiro?
+    - tem como fazer alcool 70 em casa?
+    - existe receita para fazer alcool 70 caseiro?
+    - existe receira de gel para fazer em casa?
+    - como fazer gel em casa?
+    - quero fazer alcool em gel caseiro?
+    - como posso fazer alcool caseiro?
+    - posso fazer gel caseiro para covid?
+
+- intent: covid_animais
+  examples: |
+    - posso me contaminar com meus pets?
+    - meus pets podem passar covid?
+    - posso pegar covid do meu cachorro?
+    - posso pegar covod do meu gato?
+    - tem como se contaminar por covid de cachorro?
+    - tem como se contaminar por gato?
+    - pets transmitem covid?
+    - cachorro transmite coronavirus?
+    - gato transmite covid-19?
+    - animais transmitem covid?
+
+- intent: recebimento_obj
+  examples: |
+    - é seguro receber uma encomenda?
+    - é seguro receber um pacote de qualquer área que o covid tenha sido relatado?
+    - posso receber objetos vindo de áreas de contaminação?
+    - receber encomendas de lugares onde tem contágio é seguro?
+    - posso receber encomendas de lugares com covid?
+    - existe risco em receber pacotes de fora?
+    - existe perigo em receber encomendas de lugares com coronavírus?
+    - pacotes podem trazer o vírus?
+    - pacotes podem contes o covid?
+    - encomendas podem contaminar com o vírus da covid?
+    - pacote podem ter coronavírus na superfície?
+
+- intent: covid_tempo_de_vida
+  examples: |
+    - quanto tempo a covid vive em superfícies?
+    - quanto tempo o vírus sobrevive nas superfícies?
+    - quanto tempo leva para o vírus morrer nos objetos?
+    - qual o tempo de vida do vírus da covid nos objetos?
+    - quais superfícies mantém o vírus por mais tempo?
+    - em que objetos o coronavírus vive mais?
+    - em que objetos a covid vive menos?
+
+- intent: covid_roupas
+  examples: |
+    - como devo lavar as roupas?
+    - qual a melhor forma de higienizar roupas?
+    - qual a forma correta de lavar as roupas da covid?
+    - como posso higienizar as roupas?
+    - existe algum cuidado especial com as roupas?
+    - quais cuidados devemos ter com a lavagem das roupas?
+    - como se deve lavar as roupas que vem da rua?
+    - como se deve limpar as roupas?
+    - a lavagem de roupa exige algum cuidado especial?
+    - como lavo minhas roupas?
+
+- intent: covid_em_casa
+  examples: |
+    - tenho um caso de covid confirmado em casa o que fazer?
+    - que cuidados preciso ter quando alguém da família está contaminado?
+    - como proceder com paciente contaminado em casa?
+    - como proceder com pessoa com covid na mesma casa?
+    - o que deve ser separado quando uma pessoa da família está com covid?
+    - como se proteger quando um membro da família está com o coronavírus?
+    - quais cuidados se deve ter ao compartilhar a casa com alguém infectado?
+    - quais procedimentos devem ser feitos para se isolar a pessoa com covid?
+    - tem uma pessoa com covid em casa
+    - um mebro da família está infectado o que fazer?
+    - o que fazer com infectado em casa?
+    - como fazer a separação das coisas quando se tem alguém com covid em casa?
+    - como fazer o isolamento do doente?
+    - como fazer o isolamento do infectado com covid?
+    - o que todos devem fazer quando se tem alguém infectado na família?
+    - quais procedimentos se deve ter para isolar a pessoa contaminada?
+
+- intent: covid_mitos
+  examples: |
+    - alho é bom pra covid?
+    - vitamina C é bom para covid-19?
+    - própolis é bom para coronavirus?
+    - vitamina D é bom para evitar covid?
+    - mel é bom para evitar a covid?
+    - chá de abacate com hortelã faz bem pra covid-19?
+    - uisque evita o contágio por covid?
+    - existe alguma substância que seja eficaz para evitar a covid?
+    - existe alguma vitamina que seja eficaz contra a covid?
+    - posso tomar vitamina D para evitar pegar covid?
+    - chá de alho com mel serve para evitar a contaminação do vírus?
+    - algum alimento evita covid-19?
+    - existe algum alimento que se possa ingerir para não pegar covid
+    - existe algum remédio que evite pegar covid?
+
+- intent: covid_o_que_nao_tomar
+  examples: |
+    - existe algum remédio que não se deve ingerir em caso de covid?
+    - o que não devo tomar para covid?
+    - que remédios não devo tomar em caso de covid?
+    - existe medicações que não se deve tomar em caso de covid?
+    - para o coronavírus o que não pode tomar?
+    - que medicamentos se deve evitar quando se está com covid?
+    - o que não se deve ingerir para a covid-19?
+    - tem algum remédio proibido para covid?
+    - existe alguma proibição de medicamento no caso de coronavírus?
+
+- intent: alcool_70
+  examples: |
+    - por que alcool 70 é bom para covid?
+    - alcool 70 mata o vírus?
+    - o que tem no alcool em gel que mata o covid?
+    - por que usar alcool em geral
+    - por que usar alcool 70
+    - alcool 70 é bom para evitar contaminação?
+    - alcool 70 é eficaz para matar o coronavirus?
+    - posso usar alcool 70 em gel para higienizar?
+    - o que alcool 70 faz?
+
+- intent: ajuda
+  examples: |
+    - ajuda
+    - preciso de ajuda
+    - quero ajuda
+    - me ajude
+    - menu
+    - mais opções
+    - opções
+    - me ajuda
+    - preciso ajuda
+    - me ajude
+    - quero auxilio
+    - me auxilie
+    - preciso ajuda
+    - pode me ajudar
+    - pode me auxiliar
+    - fala comigo
+    - preciso que me ajude
+    - quero tirar dúvidas
+    - tenho dúvidas
+    - me explica
+    - quero perguntar
+    - preciso perguntar
+    - quero perguntar uma coisa
+    - tirar dúvidas
+    - quero esclarecer 
+    - quero saber
+    - quero perguntar uma coisa
+    - quero saber uma coisa
+    - quero perguntar algumas coisas
+    - quero saber mais
+    - me conta mais
+    - conta tudo
+    
+
+

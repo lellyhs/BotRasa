@@ -1,0 +1,395 @@
+#version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - deny
+  - thank_you
+  - bot_challenge
+  - curse
+  - compliment
+  - inform_skills 
+  - question_name
+  - question_out_of_scope
+  - apologize
+  - nlu_fallback
+  - covid_o_que_e
+  - sars_o_que_e
+  - diferenca_entre_virus
+  - diferenca_formas_contagio
+  - sintomas
+  - testagem
+  - sintomas_leves
+  - covid_e_preocupante
+  - grupo_de_risco
+  - reinfeccao
+  - covid_e_gravidez
+  - cuidados_higiene
+  - viagem
+  - covid_transmissao
+  - covid_tratamento
+  - vacina_gripe
+  - uso_mascara
+  - troca_mascara
+  - descarte_mascara_luvas
+  - covid_medicacao
+  - corona_temperatura
+  - receita_gel
+  - covid_animais
+  - recebimento_obj
+  - covid_tempo_de_vida
+  - covid_roupas
+  - covid_em_casa
+  - covid_mitos
+  - covid_o_que_nao_tomar
+  - alcool_70
+  - aleatorio
+  - ajuda 
+  - atendente
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_deny
+  - utter_thank_you
+  - utter_curse
+  - utter_compliment
+  - utter_iamabot
+  - utter_inform_skills
+  - utter_question_name
+  - utter_question_out_of_scope
+  - utter_apologize
+  - utter_fallback
+  - utter_covid_o_que_e
+  - utter_sars_o_que_e
+  - utter_diferenca_entre_virus
+  - utter_diferenca_formas_contagio
+  - utter_sintomas
+  - utter_testagem
+  - utter_sintomas_leves
+  - utter_covid_e_preocupante
+  - utter_grupo_de_risco
+  - utter_reinfeccao
+  - utter_covid_e_gravidez
+  - utter_cuidados_higiene
+  - utter_viagem
+  - utter_covid_transmissao
+  - utter_covid_tratamento
+  - utter_vacina_gripe
+  - utter_uso_mascara
+  - utter_troca_mascara
+  - utter_descarte_mascara_luvas
+  - utter_covid_medicacao
+  - utter_corona_temperatura
+  - utter_receita_gel
+  - utter_covid_animais
+  - utter_recebimento_obj
+  - utter_covid_tempo_de_vida
+  - utter_covid_roupas
+  - utter_covid_em_casa
+  - utter_covid_mitos
+  - utter_covid_o_que_nao_tomar
+  - utter_alcool_70
+  - utter_ajuda
+  - utter_atendente
+
+responses:
+  utter_greet:
+  - text: >-
+      Olá! Que bom ter você aqui 🤗
+      Fui criado para tirar algumas dúvidas sobre a Covd-19.
+      Pode perguntar diretamente, mas se precisar de ajuda, digite 'menu' 
+      ou 'ajuda' e eu posso dar algumas opções interessantes de questões.
+
+  utter_goodbye:
+  - text: >-
+      Até logo! Quando precisar é só me procurar.
+
+  utter_deny:
+  - text: >-
+      Tudo bem então!
+
+  utter_thank_you:
+  - text: >-
+      Sempre às ordens! ✌
+
+  utter_curse:
+  - text: >-
+      Puxa... assim você me magoa! 😞
+
+  utter_compliment:
+  - text: >-
+      Muito obrigado! 😉
+
+  utter_iamabot:
+  - text: >-
+      Eu sou um robô criado pela Compasso UOL para para tirar suas dúvidas sobre alguns aspectos da Covid-19! 
+      Estou constantemente aprendendo então pode ser que alguma coisa eu ainda não saiba responder, peço que me desculpe se isso acontecer. 
+      Prometo melhorar a cada dia!
+     
+  utter_atendente:
+  - text: >-
+      Infelizmente não tenho como passar o seu atendimento para um colega humano. 
+      Mas você pode entrar em contato pelo WhatsApp (61)99938-0031 ou pelo Fixo 136.
+
+  utter_inform_skills:
+  - text: >-
+      Posso responder suas dúvidas sobre a Covid-19.
+
+  utter_question_name:
+  - text: >-
+      Não tenho um nome...mas pode me chamar de amigo.
+
+  utter_question_out_of_scope:
+  - text: >-
+      Não sei falar sobre esses assuntos, desculpe! 😬
+
+  utter_apologize:
+  - text: >-
+      Tudo bem! Sem problema!
+
+  utter_fallback:
+  - text: >-
+      Desculpe, não entendi.🙈 Pergunte novamente usando outras palavras, por favor!
+
+  utter_covid_o_que_e:
+  - text: >-
+      É o nome dado à doença causada pelo coronavírus. Esse nome vem de 'Corona', 'VIrus' e 'Disease' (doença), e 2019 representa o ano em que ela surgiu (o surto foi relatado à Organização Mundial da Saúde em 31 de dezembro). 
+      A palavra coronavírus refere-se ao grupo ao qual o vírus pertence. O coronavírus são a segunda principal causa de resfriado comum.
+      O vírus foi identificado pela primeira vez em Wuhan, na província de Hubei, China, em pessoas expostas em um mercado de frutos do mar e de animais vivos.
+
+  utter_sars_o_que_e:
+  - text: >-
+      É o nome do vírus, uma sigla para Severe Acute Respiratory Syndrome CoronaVirus 2 (síndrome respiratório aguda grave por coronavírus 2, em inglês).
+
+  utter_diferenca_entre_virus:
+  - text: >-
+      SARS-CoV-2, coronavírus, novo coronavírus: se refere ao vírus.
+      Já a COVID-19 é a doença. A referência é no feminino - a (doença) COVID-19.
+      Os coronavírus pertencem a uma grande família de vírus, que podem circular tanto entre pessoas, como entre animais, 
+      incluindo camelos, gatos e morcegos. O recém-identificado coronavírus não é o mesmo que o coronavírus que provoca a 
+      Síndrome Respiratória do Oriente Médio (Mers) ou a Síndrome Respiratória Aguda Grave (Sars).
+
+  utter_diferenca_formas_contagio:
+  - text: >-
+      Transmissão local: São casos de pessoas que se infectaram e não estiveram em nenhum país com registro da doença, mas tiveram contato com outro paciente infectado, que trouxe o vírus de fora do país.
+      Transmissão comunitária ou sustentada: São casos nos quais não é possível identificar as fontes de transmissão da doença. Esse tipo de transmissão sugere circulação ativa do vírus na comunidade.
+
+  utter_sintomas:
+  - text: >- 
+      Como os sintomas da COVID-19 são bastante parecidos com os da gripe, a única forma de saber se a infecção é causada pelo coronavírus é por exame laboratorial. 
+      Sintomas mais graves como febre alta, dificuldade respiratória e hipóxia podem aparecer rapidamente, principalmente em grupos vulneráveis.
+      Atente aos sinais SARS-CoV-2. São principalmente respiratórios. Pode causar infecção do trato respiratório inferior, como as pneumonias.
+      Mas veja abaixo o quadro comparativo dos sintomas:
+    image: "https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/tabela1.png"
+
+  utter_testagem:
+  - text: >-
+      Pessoas com dificuldade respiratória tem prioridade. A pessoa que não tiver sintoma grave deve ficar em casa e circular o menos possível.
+      A pessoa deve procurar uma unidade de saúde se apresentar sintomas mais intensos, como dificuldade para respirar, febre muito alta (a partir de 39°C) e mal-estar excessivo.
+      A Fiocruz não realiza a coleta diretamente com os cidadãos, ela realiza testes em materiais que são coletados nas unidades de saúde.
+
+  utter_sintomas_leves:
+  - text: >-
+      Foi relatada infecção assintomática com SARS-CoV-2, mas ainda não se sabe qual o papel da infecção assintomática na transmissão da doença. 
+      Da mesma forma, o papel da transmissão pré-sintomática (detecção de infecção durante o período de incubação antes do início da doença) é desconhecido.
+      O período de incubação do vírus pode variar de dois a 14 dias, mais frequentemente ao redor de cinco dias. Durante esse tempo, o vírus tem capacidade de transmissão. 
+      Por isso, é importante adotar medidas gerais de prevenção, como lavar as mãos com frequência e não compartilhar objetos de uso pessoal.
+
+  utter_covid_e_preocupante:
+  - text: >-
+      As pessoas devem se preocupar com o impacto do surto de COVID-19. Apesar de a doença ser geralmente leve, especialmente para crianças e adultos jovens, 
+      ela pode se agravar, necessitando de cuidados hospitalares. A atenção deve ser direcionada à proteção individual e comunitária, por meio de medidas de higiene e etiqueta respiratória. 
+      É importante manter-se informado e seguir as orientações das autoridades locais de saúde, incluindo quaisquer restrições impostas a viagens, movimentação e reuniões
+
+  utter_grupo_de_risco:
+  - text: >-
+      Grupos com maior risco são os idosos, pessoas com deficiência,  doenças crônicas ou imunodeprimidas e pessoas com doenças associadas, como cardíacos, diabéticos 
+      e pessoas com outros problemas respiratórios como a asma e a bronquite. Essas pessoas podem desenvolver o quadro mais grave da doença e, por isso, 
+      têm mais chance de morrer devido à infecção e devem ter prioridade no atendimento e na testagem para o vírus.
+      Algumas das doenças preexistentes de alerta são: hipertensão arterial, diabetes, doença cardíaca, doença pulmonar, neoplasias, transplantados, uso de imunossupressores.
+
+  utter_reinfeccao:
+  - text: >-
+      A resposta imune ao COVID-19 ainda não está esclarecida. É pouquíssimo provável que os pacientes com infecção por coronavírus sejam reinfectados logo após a recuperação, 
+      apesar de não se saber se uma proteção imunológica semelhante será observada em pacientes com COVID-19.
+
+  utter_covid_e_gravidez:
+  - text: >-
+      Atualmente, não se sabe se as mulheres grávidas têm maior chance de adoecer com o COVID-19 do que o público em geral, nem se são mais propensas a terem doenças graves como resultado. 
+      Assim como também não se sabe se o coronavírus causa problemas durante a gravidez ou se afeta a saúde do bebê após o nascimento. 
+      Até o momento, não há elementos que comprovem que o leite materno possa disseminar o novo coronavírus. A lactante com COVID-19 deve estar atenta à higiene respiratória, 
+      lavar as mãos antes e após tocar o seu bebê e limpar e desinfetar as superfícies rotineiramente.
+
+  utter_cuidados_higiene:
+  - text: >-
+      1) Lavar as mãos frequentemente com água e sabonete por pelo menos 20 segundos, respeitando os cinco momentos de higienização. Se não houver água e sabonete, usar um desinfetante para as mãos à base de álcool 70%.
+      2) Evitar tocar nos olhos, nariz e boca com as mãos não lavadas.
+      3) Evitar contato próximo com pessoas doentes e manter-se a uma distância de pelo menos um metro das demais pessoas.
+      4) Cobrir com o cotovelo ou com um lenço de papel a boca e nariz ao tossir ou espirrar. No caso do papel, jogar no lixo.
+      5) Limpar e desinfetar objetos e superfícies tocados com frequência.
+      6) Mantenha os ambientes bem ventilados.
+      7) Você deve ficar em casa se estiver doente.
+
+  utter_viagem:
+  - text: >-
+      A orientação é que todos que tenham possibilidade de ficar em casa, que fiquem. Caso não seja possível, higienize suas mãos frequentemente com água e sabão ou álcool 70% ou e evite tocar o rosto. 
+      Mantenha-se a pelo menos um metro de distância das demais pessoas. Adote medidas de etiqueta respiratória e não viaje de forma alguma caso faça parte do grupo de risco ou apresente sintomas de tosse e febre.
+      Ao retornar de uma área com propagação de COVID-19, deve-se monitorar os sintomas por 14 dias. Em caso de sintomas leves, deve ser feito o isolamento. Em caso de sintomas graves, procurar uma unidade de saúde.
+
+  utter_covid_transmissao:
+  - text: >-
+      O coronavírus é transmitido a partir de um indivíduo que tem o vírus, em contato próximo (cerca de 1m) com outras pessoas. Ocorre através do contato físico (aperto de mão, abraço etc), pequenas gotículas de saliva, 
+      espirro, tosse e através de objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc.
+
+  utter_covid_tratamento:
+  - text: >-
+      Ainda não há um tratamento específico para a doença. As pessoas infectadas devem permanecer em isolamento e receber cuidados de saúde para evitar o agravamento do quadro e aliviar os sintomas, reduzindo o desconforto. 
+      Pessoas com sintomas graves devem ser hospitalizadas. 
+      Beber bastante água auxilia no controle da febre. Banhos quentes e umidificadores de ar podem ser utilizados no quarto para ajudar a diminuir a dor de garganta e a tosse. 
+      O serviço de saúde deve ser procurado sempre que os sintomas se agravarem.
+
+  utter_vacina_gripe:
+  - text: >-
+      O vírus da gripe e da covid-19 são diferentes e portanto a vacinação para influenza apenas auxilia evitando a coinfecção pelos dois vírus ao mesmo tempo e reduzindo a pressão sobre o sistema de saúde. 
+      Por isso, é importante manter o calendário de vacinação atualizado e seguir as recomendações das autoridades sanitárias em relação à vacinação.
+      Até o momento, não há vacina nem medicamento antiviral específico para prevenir ou tratar a COVID-19, embora esforços estejam sendo feitos para tal.
+
+  utter_uso_mascara:
+  - text: >-
+      1 - Antes de tocar na máscara, limpe as mãos com um higienizador à base de álcool ou água e sabão.
+      2 - Pegue a máscara e verifique se está rasgada ou com buracos.
+      3 - Oriente o lado superior da máscara que está voltado para fora (o lado colorido).
+      4 - Coloque a máscara no seu rosto com cuidado para cobrir a boca e o nariz e amarre com segurança para minimizar as lacunas entre o rosto e a máscara; Aperte a tira de metal ou a borda rígida da máscara para que ela se adapte ao formato do seu nariz.
+      5 - Puxe a parte inferior da máscara para que ela cubra sua boca e seu queixo. Enquanto estiver utilizando a máscara, evite tocá-la.
+      Veja a ilustração abaixo:
+    image: "https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/img/faq/passo-a-passo-mascara.png"
+
+  utter_troca_mascara:
+  - text: >-
+      Substitua a máscara usada por uma nova máscara limpa e seca assim que estiver úmida ou danificada.
+      Após o uso, retire a máscara removendo as presilhas elásticas ou laços por trás das orelhas, mantendo a máscara afastada do rosto e das roupas. 
+      O cuidado é sempre para evitar tocar nas superfícies potencialmente contaminadas da máscara (parte frontal).
+
+  utter_descarte_mascara_luvas:
+  - text: >-
+      Descarte das máscaras ou luvas deve ser feito em uma lixeira fechada e apropriada imediatamente após o uso. Não descarte em locais públicos para evitar a contaminação.
+      Higienize as mãos depois de tocar ou descartar.
+      Lembre-se de não tocar o rosto com as luvas pois ela pode estar contaminada.  Lavar as mãos com água e sabão e evitar o contato com o rosto oferece uma proteção mais efetiva do que o uso de luvas ao sair de casa para locais públicos.
+
+  utter_covid_medicacao:
+  - text: >-
+      Não se recomenda a automedicação com nenhum medicamento, incluindo antibióticos, como forma de prevenção ou cura para a doença.
+      Os antibióticos não funcionam contra vírus, eles funcionam apenas em infecções bacterianas. A COVID-19 é causada por um vírus. Portanto, os antibióticos não funcionam.
+      Assim como ainda não há evidências de que a cloroquina ou a variante hidroxicloroquina tenha efeito. Não adquira esses medicamentos pois são importantes para várias condições reumatológicas 
+      e dermatológicas que exigem tratamento contínuo, além de apresentarem potenciais efeitos colaterais.
+      Embora alguns medicamentos possam proporcionar conforto e aliviar os sintomas da COVID-19, não há evidências de que a medicina atual possa prevenir ou curar a doença. 
+
+  utter_corona_temperatura:
+  - text: >-
+      Como todo vírus respiratório, a tendência dele é se espalhar mais em ambientes secos e com temperaturas mais baixas. 
+      Temperaturas mais elevadas diminuem a atividade do vírus, mas isso não quer dizer que não haja risco de transmissão.
+      De forma geral, vírus e bactérias são inativados por temperaturas acima de 70º C. Por isso, é seguro admitir que ferver água elimine o vírus. 
+      Entretanto, o uso de água quente como bebida ou para lavar roupas não garante a eliminação do vírus. 
+      Para limpar roupas e superfícies utilize água e sabão, álcool a 70% ou água sanitária. 
+      Lavar as mãos e o corpo, com água e sabão é eficaz para remover o vírus.
+
+  utter_receita_gel:
+  - text: >-
+      A OPAS e a OMS não divulgaram receita de gel para fazer em casa. Esse processo de produção caseira pode, inclusive, ser prejudicial à saúde. 
+      A recomendação da OPAS e da OMS é lavar as mãos com água e sabão ou higienizador à base de álcool. 
+      Tanto álcool em gel quanto água e sabão são eficazes para matar vírus que podem estar nas mãos ou em outra parte do corpo.
+
+  utter_covid_animais:
+  - text: >-
+      Até o momento, não há evidências de que qualquer animal de estimação possa transmitir coronavírus.
+
+  utter_recebimento_obj:
+  - text: >-
+      A probabilidade de uma pessoa infectada contaminar mercadorias comerciais é baixa e o risco de pegar o vírus que causa o COVID-19 em um pacote que foi movido, 
+      transportado e exposto a diferentes condições e temperaturas também é baixo.
+
+  utter_covid_tempo_de_vida:
+  - text: >-
+      Não se sabe ao certo quanto tempo o vírus que causa a COVID-19 sobrevive em superfícies, mas ele parece se comportar como outros coronavírus. 
+      Os coronavírus podem persistir nas superfícies por algumas horas ou até vários dias, o que pode variar conforme diferentes condições: por exemplo, tipo de superfície, temperatura ou umidade do ambiente.
+
+  utter_covid_roupas:
+  - text: >-
+      Fique atento para não sacudir roupas 'potencialmente' contaminadas.
+      É importante separar roupas pessoais e roupas de cama de pessoas infectadas para que seja feita a higienização à parte. 
+      Se não for possível fazer a lavagem destas roupas imediatamente, a recomendação é que elas sejam armazenadas em sacos de lixo plástico até que seja possível lavar. 
+      Higienizar as mãos com álcool gel 70% ou água e sabão, antes e depois de manipular os sacos plásticos.
+      Para a higienização das roupas, recomenda-se a utilização de detergente próprio para lavar roupas.
+
+  utter_covid_em_casa:
+  - text: >-
+      A distância mínima entre o paciente e os demais moradores é de 1 metro.
+      No quarto usado para o isolamento, mantenha as janelas abertas para circulação do ar, a porta fechada durante todo o isolamento e limpe a maçaneta frequentemente com álcool 70% ou água sanitária.
+      Atenção! Em casas com apenas um quarto, os demais moradores devem dormir na sala, longe do paciente infectado.
+      O lixo produzido pelo paciente contaminado precisa ser separado e descartado. 
+      Toalhas de banho, garfos, facas, colheres, copos e outros objetos usados pelo paciente, assim como sofás e cadeiras também não podem ser compartilhados. 
+      Os móveis da casa precisam ser limpos frequentemente com água sanitária ou álcool 70%.
+      Utilize máscara o tempo todo. Se for preciso cozinhar, use máscara de proteção, cobrindo boca e nariz todo o tempo. 
+      Depois de usar o banheiro, nunca deixe de lavar as mãos com água e sabão e sempre limpe vaso, pia e demais superfícies com álcool ou água sanitária para desinfecção do ambiente.
+
+  utter_covid_mitos:
+  - text: >-
+      De acordo com a OMS, não há evidências de que comer alho ou qualquer outro alimento possa proteger as pessoas do coronavírus.
+      Assim como a utilização de vitamina C, própolis ou outra substância. 
+      Até o momento, não há nenhum medicamento, substância, vitamina, alimento específico ou vacina que possa prevenir a infecção.
+      Portanto, uma alimentação saudável é muito mais recomendável.
+
+  utter_covid_o_que_nao_tomar:
+  - text: >-
+      Não há restrições específicas de uso de medicamentos de rotina e alívio de sintomas. A restrição ao uso de medicamentos à base de ibuprofeno no tratamento contra a COVID-19 inicialmente 
+      propagada não é suportada por evidências científicas conclusivas. São necessários mais estudos que forneçam dados mais robustos sobre o tema.
+
+  utter_alcool_70:
+  - text: >-
+      Porque nessa concentração o álcool tem ação antimicrobiana, agindo contra bactérias, fungos e vírus (incluindo o novo coronavírus). Concentrações diferentes desta não terão o mesmo efeito antimicrobiano. 
+      Além disso, álcool líquido ou concentrações maiores poderão evaporar rapidamente, diminuindo sua eficácia, além de ressecar a pele, levando à formação de fissuras e rachaduras, o que pode servir como porta de entrada a bactérias.
+
+  utter_aleatorio:
+  - text: >- 
+      🤔
+      Quer ir para o menu de ajuda?
+    buttons:
+      - title: "Sim"
+        payload: "/ajuda"
+      - title: "Não"
+        payload: "/deny"
+
+  utter_ajuda:
+  - text: >-
+      Separamos aqui alguns pontos importantes. 
+      Clique na opção desejada para ver as orientações e se quiser ver novamente, basta digitar 'menu' ou 'ajuda'. 
+      Se a opção que quer não está aqui, me diga o que é e eu tento procurar para você.
+    buttons:
+      - title: "Quem sou eu?"
+        payload: "/bot_challenge"
+      - title: "O que é Covid?"
+        payload: "/covid_o_que_e"
+      - title: "Tipos de gripe"
+        payload: "/diferenca_entre_virus"
+      - title: "Sintomas de Covid"
+        payload: "/sintomas"
+      - title: "Cuidados principais"
+        payload: "/cuidados_higiene"
+      - title: "Transmissão do vírus"
+        payload: "/covid_transmissao"
+      - title: "Tratamento"
+        payload: "/covid_tratamento"
+      - title: "Alguém de casa foi infectado"
+        payload: "/covid_em_casa"
+      - title: "Como usar a máscara"
+        payload: "/uso_mascara"
+      - title: "Como descartar máscaras e luvas"
+        payload: "/descarte_mascara_luvas"
+      - title: "Sair"
+        payload: "/goodbye" 
+    button_type: vertical
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
